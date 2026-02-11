@@ -1,0 +1,11 @@
+prefix=/mfs/mtkslt0476/mtk03818/CAS_REAL/alps-trunk-r0_basic--2020_04_09_02_00/merged/kernel/build/abi/abigail-inst/e6ca11d4
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libabigail
+Description: The ABI Generic Analysis and Instrumentation Library
+Version: 1.8
+Requires.private: libxml-2.0 >= 2.6.22
+Libs: -L${libdir} -labigail
+Cflags: -I${includedir}/libabigail
